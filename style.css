@@ -1,0 +1,116 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f9ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background-color: #004d99;
+  color: white;
+  padding: 20px 0;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin: 10px 0 0 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.input-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  background: #333;
+  color: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  top: -5px;
+  right: 25px;
+  width: 200px;
+  z-index: 10;
+}
+
+.input-group:hover .tooltip {
+  display: block;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.resultado {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #e6f4ff;
+  border-left: 5px solid #0077cc;
+  border-radius: 6px;
+  font-size: 1.1rem;
+}
+
+.github-link {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.github-link a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.github-link a:hover {
+  text-decoration: underline;
+}

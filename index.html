@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CalculaJuros SENAI</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/SENAI_logo.svg/2560px-SENAI_logo.svg.png" alt="Logo SENAI" class="logo">
+    <h1>Calculadora de Juros</h1>
+  </header>
+
+  <main class="container">
+    <form id="form">
+      <div class="input-group">
+        <label>Capital Inicial (R$)
+          <i class="fas fa-question-circle"></i>
+          <span class="tooltip">Valor que será aplicado ou emprestado inicialmente.</span>
+        </label>
+        <input type="number" id="capital" placeholder="Ex: 1000" required />
+      </div>
+
+      <div class="input-group">
+        <label>Taxa de Juros (%)
+          <i class="fas fa-question-circle"></i>
+          <span class="tooltip">Informe a taxa de juros mensal ou anual.</span>
+        </label>
+        <input type="number" id="taxa" placeholder="Ex: 5" required />
+      </div>
+
+      <div class="input-group">
+        <label>Período
+          <i class="fas fa-question-circle"></i>
+          <span class="tooltip">Duração em meses ou anos.</span>
+        </label>
+        <input type="number" id="tempo" placeholder="Ex: 12" required />
+      </div>
+
+      <div class="input-group">
+        <label>Tipo de Período:</label>
+        <select id="tipoTempo">
+          <option value="meses">Meses</option>
+          <option value="anos">Anos</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label>Tipo de Juros:</label>
+        <select id="tipoJuros">
+          <option value="simples">Simples</option>
+          <option value="composto">Composto</option>
+        </select>
+      </div>
+
+      <div class="botoes">
+        <button type="button" onclick="calcular()">Calcular</button>
+        <button type="reset">Limpar Campos</button>
+      </div>
+    </form>
+
+    <div class="resultado" id="resultado"></div>
+
+    <div class="github-link">
+      <a href="https://github.com/seuusuario/calculadora-senai" target="_blank">
+        <i class="fab fa-github"></i> Ver no GitHub
+      </a>
+    </div>
+  </main>
+</body>
+</html>
